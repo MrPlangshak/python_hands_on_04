@@ -4,7 +4,7 @@ Two friends, Daniella and Godiya, walk into a mall and pick up just one cart to 
 Once inside, they split up and go to different wings of the mall, 
 but since they share the same cart, everything either of them adds goes into the same cart.
 
-cart = {}
+ocart = {}
 godiya = ???
 daniella = ???
 
@@ -25,3 +25,22 @@ At checkout:
 # print(godiya == daniella) # should return true
 # print(summary_of_cart)
 # print(cart)
+
+
+#1
+cart = {}
+godiya = cart
+daniella = cart
+
+daniella["Shoes"] = 2
+godiya["Watch"] = 1
+daniella.pop("Shoes")
+godiya["Bag"] = 1
+godiya.pop("Bag")
+summary_of_carts = cart.copy()
+cart.clear()
+print(godiya)
+print(daniella)
+print(godiya == daniella) # should return true
+print(summary_of_carts)
+print(cart)
