@@ -9,3 +9,17 @@ Later in the day:
 - The "Student" category sold out completely.
 - The team wanted to keep a record of the day’s sales before preparing for next week’s concert.
 """
+
+
+tickets = {"VIP": 50, "Regular": 150, "Student": 75}
+print("Initial Ticket Sales:", tickets)
+
+tickets["Backstage"] = 10
+print("After Adding Backstage:", tickets)
+
+tickets.pop("Student")
+print("After Removing Student Category:", tickets)
+
+todays_sales = tickets.copy()
+print("Today's Sales Record:", todays_sales)
+
