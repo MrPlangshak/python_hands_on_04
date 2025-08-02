@@ -12,3 +12,23 @@ During the first day:
 
 # print(participants_snapshot)
 # print(participants)
+
+# Initial dictionary of participants
+participants = {"VIP": "Alice", "Regular": "Bob", "Student": "Charlie"}
+print(participants)
+# A "Guest" participant named "Daisy" joined
+participants["Guest"] = "Daisy"
+print("After adding Guest:", participants)
+
+# The "Student" participant canceled their registration
+participants.pop("Student")
+print("After removing Student:", participants)
+
+# Organizers created a record for the day
+record = participants.copy()
+print("Record for the day:", record)
+
+# Remove the most recently added participant ("Guest") from the live system
+participants.pop("Guest")
+print("After removing most recent participant:", participants)
+
