@@ -55,7 +55,9 @@ order_summary = cart.copy()
 print("Order summary:", order_summary)
 
 # Empty the smart cart for next customers
-cart = {key: {} for key in cart}
-print("Cart after reset:", cart)
+for dept in cart:
+    cart[dept].clear()
+print("Cart After Checkout:", cart)
+
 
 
